@@ -15,8 +15,8 @@ const services = [
     icon: Smartphone,
   },
   {
-    title: "Digital Solutions",
-    desc: "Custom digital products designed to accelerate business growth.",
+    title: "Digital Solutions & Marketing",
+    desc: "Custom digital products and marketing strategies designed to drive business growth and online success",
     icon: Globe,
   },
   {

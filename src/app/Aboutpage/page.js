@@ -30,9 +30,8 @@ export default function AboutPage() {
         <div className="space-y-6">
           <h2 className="text-4xl font-bold">Who We Are</h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Our company is driven by creativity, technology, and a commitment
-            to excellence. We collaborate with businesses across industries to
-            transform ideas into powerful digital experiences.
+            Bitfix delivers smart web, mobile, and digital marketing solutions that empower businesses to grow efficiently.
+From custom software development to digital marketing, strategy, and optimization, we create innovative tools and campaigns that help your business expand its online presence, attract more customers, and boost growth.
           </p>
           <p className="text-gray-300 text-lg leading-relaxed">
             From startups to enterprises, we deliver solutions that are scalable,

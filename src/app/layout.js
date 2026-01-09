@@ -11,10 +11,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Bitfix</title>
+        <meta name="description" content="Bitfix website" />
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN4WJYBWEB"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MN4WJYBWEB');
+      `,
+          }}
+        />
+      </head>
+
       <body>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
 
       </body>
     </html>

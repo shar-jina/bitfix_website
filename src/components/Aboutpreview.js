@@ -89,7 +89,7 @@ export default function AboutPreview() {
             From custom software development to digital strategy and optimization, we create tools that help you innovate and expand your digital presence.
           </p>
           <Link
-            href="/about"
+            href="/Aboutpage"
             className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
              text-white font-semibold px-8 py-3 rounded-full
              shadow-lg hover:shadow-2xl

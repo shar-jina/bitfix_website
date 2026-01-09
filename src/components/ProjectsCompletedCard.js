@@ -23,7 +23,7 @@ export default function ProjectsCompletedCard() {
                               flex items-center justify-center shadow-lg">
                 <CheckCircle size={36} className="text-white" />
               </div>
-              <h2 className="text-5xl font-bold text-white mt-2">1000+</h2>
+              <h2 className="text-5xl font-bold text-white mt-2">20+</h2>
               <p className="text-gray-200 text-center text-lg">Projects Completed</p>
             </div>
 
@@ -34,7 +34,7 @@ export default function ProjectsCompletedCard() {
                               flex items-center justify-center shadow-lg">
                 <Users size={36} className="text-white" />
               </div>
-              <h2 className="text-5xl font-bold text-white mt-2">500+</h2>
+              <h2 className="text-5xl font-bold text-white mt-2">18</h2>
               <p className="text-gray-200 text-center text-lg">Partners</p>
             </div>
 
