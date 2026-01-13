@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Home() {
   const [clicked, setClicked] = useState(false);
@@ -32,6 +34,15 @@ export default function Home() {
           <p className="text-lg md:text-xl mb-6 max-w-lg">
             From websites and mobile apps to fintech and custom software, we deliver solutions that accelerate growth and efficiency.
           </p>
+           <Link
+            href="/Contactpage"
+            className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+             text-white font-semibold px-8 py-3 rounded-full
+             shadow-lg hover:shadow-2xl
+             transform hover:scale-105 transition duration-300"
+          >
+            Explore More
+          </Link>
         </div>
 
         {/* Right side: Image */}

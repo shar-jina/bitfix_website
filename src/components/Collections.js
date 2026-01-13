@@ -4,13 +4,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
+
 
 const collectionItems = [
-  { src: "/images/collection.jpeg", title: "Project One" },
-  { src: "/images/collection2.jpeg", title: "Project Two" },
-  { src: "/images/collection3.jpeg", title: "Project Three" },
-  { src: "/images/collection4.jpeg", title: "Project Four" },
-  { src: "/images/collection5.jpeg", title: "Project Five" },
+  { src: "/images/project1.png", title: "Project One", link: "https://www.figma.com/proto/YVOmO87OH6tX3shiSjw6EW/ott-platform?page-id=0%3A1&node-id=0-26&viewport=90%2C67%2C0.21&t=cPXOZc4uIn1noLCm-1&scaling=min-zoom&content-scaling=fixed" },
+  { src: "/images/project2.png", title: "Project Two", link: "https://www.figma.com/proto/JLfw0WTQEpfFiWhmMsg9PE/Ibis-Website--Papercrane?page-id=0%3A1&node-id=1-4&viewport=338%2C161%2C0.09&t=kJccrIddzEfRjHpt-1&scaling=min-zoom&content-scaling=fixed" },
+  { src: "/images/project3.png", title: "Project Three", link: "https://www.figma.com/proto/dhKL4G5DjALVoIseYGJ9xt/Innovo-Group-Website?page-id=0%3A1&node-id=1-166&viewport=424%2C45%2C0.06&t=2XstF7WeOiNd5NAB-1&scaling=scale-down-width&content-scaling=fixed" },
+
 ];
 
 export default function Collection() {
@@ -37,27 +38,35 @@ export default function Collection() {
           transition={{ type: "spring", stiffness: 200, damping: 20 }}
         >
           {[...collectionItems, ...collectionItems].map((item, index) => (
-            <motion.div
+            <Link
               key={index}
-              className="flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-2xl cursor-pointer
-                         bg-white/10 backdrop-blur-lg border border-white/20 relative"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 1.1 }}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Image
-                src={item.src}
-                alt={item.title}
-                width={320}
-                height={240}
-                className="rounded-xl"
-              />
+              <motion.div
+                className="flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-2xl cursor-pointer
+             bg-white/10 backdrop-blur-lg border border-white/20 relative"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 1.1 }}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                />
 
-              {/* Heading Div */}
-              <div className="absolute bottom-0 w-full bg-white/20 backdrop-blur-md text-white py-2 px-4 text-center font-semibold">
-                {item.title}
-              </div>
-            </motion.div>
+                {/* Heading */}
+                <div className="absolute bottom-0 w-full bg-black/22 backdrop-blur-md
+                  text-white py-2 px-4 text-center font-semibold">
+                  {item.title}
+                </div>
+              </motion.div>
+
+            </Link>
           ))}
+
         </motion.div>
       </div>
 

@@ -25,11 +25,10 @@ export default function Header() {
             <Image
               src="/images/logo.png" 
               alt="Bitfix Logo"
-              width={50}             
-              height={50}
+              width={100}             
+              height={100}
               className="object-contain"
             />
-            <span className="text-2xl font-bold">Bitfix</span>
           </div>
         </Link>
         </h1>
@@ -40,7 +39,6 @@ export default function Header() {
           <Link href="/Visionmission" className={navLink("/Visionmission")}>Vision & Mission</Link>
           <Link href="/Aboutpage" className={navLink("/Aboutpage")}>About</Link>
           <Link href="/Roadmappage" className={navLink("/Roadmappage")}>Roadmap</Link>
-          <Link href="/team" className={navLink("/team")}>Team</Link>
           <Link href="/Contactpage" className={navLink("/Contactpage")}>Contact</Link>
         </nav>
 
@@ -65,7 +63,6 @@ export default function Header() {
           <Link href="/Visionmission" className={navLink("/Visionmission")} onClick={() => setIsOpen(false)}>Vision & Mission</Link>
           <Link href="/Aboutpage" className={navLink("/Aboutpage")} onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/Roadmappage" className={navLink("/Roadmappage")} onClick={() => setIsOpen(false)}>Roadmap</Link>
-          <Link href="/team" className={navLink("/team")} onClick={() => setIsOpen(false)}>Team</Link>
           <Link href="/Contactpage" className={navLink("/Contactpage")} onClick={() => setIsOpen(false)}>Contact</Link>
         </nav>
       )}

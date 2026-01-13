@@ -6,6 +6,8 @@ import BestServices from '@/components/BestServices';
 import OurCollection from '@/components/Collections';
 import Roadmap from '@/components/Roadmap';
 import Partners from '@/components/Partners';
+import TeamSection from '@/components/Teamsection';
+
 
 
 
@@ -21,6 +23,7 @@ export default function Home() {
       <BestServices/>
       <OurCollection/>
       <Roadmap/>
+      <TeamSection/>
       <Partners/>
     </>
   );
