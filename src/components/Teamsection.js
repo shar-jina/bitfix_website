@@ -10,8 +10,8 @@ export default function TeamSection() {
         { name: "Akhil", role: "Project Manager", img: "/images/team4.jpeg" },
     ];
     const interns = [
-        { name: "Adel", role: "", img: "" },
-        { name: "sharjina", role: "", img: "" },
+        { name: "Adel", role: "Developer Intern", img: "/images/intern2.jpeg" },
+        { name: "sharjina", role: "Developer Intern", img: "/images/intern.png" },
 
 
     ]
@@ -59,19 +59,20 @@ export default function TeamSection() {
                         </div>
                     ))}
                 </div>
+
                 <div className="text-center mb-16 mt-16">
                     <h2 className="text-2xl md:text-4xl font-bold mb-4">
                         Meet Our Interns
                     </h2>
-
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+
+                <div className="flex flex-wrap justify-center gap-10">
                     {interns.map((member, index) => (
                         <div
                             key={index}
-                            className="group bg-white/10 backdrop-blur-xl border border-white/20
-                         rounded-2xl overflow-hidden text-center
-                         hover:scale-105 transition-all duration-300"
+                            className="group w-[280px] bg-white/10 backdrop-blur-xl border border-white/20
+                 rounded-2xl overflow-hidden text-center
+                 hover:scale-105 transition-all duration-300"
                         >
                             {/* Image */}
                             <div className="overflow-hidden">
@@ -81,7 +82,7 @@ export default function TeamSection() {
                                     width={400}
                                     height={400}
                                     className="w-full h-72 object-cover
-                             group-hover:scale-110 transition duration-500"
+                     group-hover:scale-110 transition duration-500"
                                 />
                             </div>
 
@@ -93,7 +94,8 @@ export default function TeamSection() {
                         </div>
                     ))}
                 </div>
-                
+
+
 
 
 

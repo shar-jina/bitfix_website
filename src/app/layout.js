@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <head  className="overflow-x-hidden">
         <title>Bitfix</title>
         <meta name="description" content="Bitfix website" />
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body>
+      <body className="overflow-x-hidden">
         <Header />
         {children}
         <Footer />
